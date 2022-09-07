@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --body_background: #f5f5f5;
+  --main_container: #ffffff;
+  --value: #d5eaff;
+  --value_vector: #99cdff;
+  --dark_blue: #0b76e0;
+  --choice: #ff5c00;
+  --choice_vector: #b04000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  letter-spacing: 0.2px;
+  background: var(--body_background);
+}
+
+.main-container {
+  width: 1024px;
+  height: 176px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  background: var(--main_container);
+  box-shadow: 0px 51px 114px rgba(199, 199, 199, 0.15),
+    0px 15.375px 34.3677px rgba(199, 199, 199, 0.0895633),
+    0px 6.38599px 14.2746px rgba(199, 199, 199, 0.0605927),
+    0px 2.30969px 5.16283px rgba(199, 199, 199, 0.0352376);
+  border-radius: 12px;
+  /* border: 1px solid red; */
+}
+
+.top-label {
+  width: 140px;
+  height: 32px;
+  left: -6px;
+  top: -16px;
+  position: absolute;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  flex-direction: row;
+  /* padding: 0px 8px;
+  gap: 8px; */
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 0px 8px 8px 0px;
+  /* border: 1px solid red; */
+}
+
+.top-label:before {
+  position: absolute;
+  content: "";
+  top: 32px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  transform-origin: top left;
+  transform: rotate(-45deg);
+  z-index: -1;
+  background-color: var(--value_vector);
+  /* border: 1px solid red; */
+}
+
+.label-text {
+  /* border: 1px solid red; */
+}
+
+.value {
+  color: var(--dark_blue);
+  background: var(--value);
+}
+
+.fire {
+  width: 16px;
+  height: 18px;
+  background-image: url("../assets/fire.svg");
+  margin: 0 10px;
+  /* flex: none;
+  order: 0;
+  flex-grow: 0; */
+}
+
+.choice {
+}
+
+.number {
+  position: absolute;
+  width: 95px;
+  height: 108px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 135%;
+  text-transform: capitalize;
+  color: rgba(85, 98, 110, 0.25);
+  border: 1px solid red;
+}
+
+@media screen and (min-width: 1074px) {
+  .choice {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1074px) {
+  .choice {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .value {
+    display: none;
+  }
+}
