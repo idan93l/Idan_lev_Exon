@@ -3,8 +3,12 @@
 :root {
   --body_background: #f5f5f5;
   --main_container: #ffffff;
+  --number_color: rgba(85, 98, 110, 0.25);
+  --text_dark: #626e79;
+  --text_darker: #55626e;
   --value: #d5eaff;
   --value_vector: #99cdff;
+  --light_blue: #55a0ea;
   --dark_blue: #0b76e0;
   --choice: #ff5c00;
   --choice_vector: #b04000;
@@ -31,7 +35,7 @@ body {
   width: 1024px;
   height: 176px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: row;
   position: relative;
@@ -99,15 +103,67 @@ body {
 }
 
 .number {
-  position: absolute;
   width: 95px;
   height: 108px;
   font-weight: 700;
   font-size: 80px;
   line-height: 135%;
   text-transform: capitalize;
-  color: rgba(85, 98, 110, 0.25);
-  border: 1px solid red;
+  color: var(--number_color);
+  /* border: 1px solid red; */
+  padding: 0 12px;
+}
+
+img {
+  width: 202px;
+  height: 128px;
+  padding: 17px 13px 32px;
+  /* border: 1px solid red; */
+}
+
+.middle-container {
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  padding: 17px 12px 56px;
+  /* border: 1px solid red; */
+}
+
+.tv-info {
+  width: 277px;
+  height: 44px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text_darker);
+}
+
+.middle-container-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.brand {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text_dark);
+  padding-bottom: 12px;
+}
+
+.discount {
+  width: 70px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--light_blue);
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: var(--main_container);
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 1074px) {
