@@ -166,6 +166,58 @@ img {
   border-radius: 4px;
 }
 
+.rate-container {
+  width: 67px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 2px 12px 0;
+}
+
+.rate {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--text_darker);
+  margin-bottom: 10px;
+}
+
+.rate-info {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -3px;
+  width: 12.25px;
+  height: 12.25px;
+  background-image: url("../assets/info.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.stars-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.star {
+  width: 11px;
+  height: 11px;
+  margin-left: 2.3px;
+  background-image: url('../assets/star-full.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  color: var(--dark_blue);
+  /* border: 1px solid red; */
+}
+
+.half {
+  background-image: url('../assets/star-half.svg');
+}
+
 @media screen and (min-width: 1074px) {
   .choice {
     display: none;
