@@ -123,7 +123,6 @@ img {
   display: flex;
   flex-direction: column;
   padding: 17px 12px 56px;
-  /* border: 1px solid red; */
 }
 
 .tv-info {
@@ -212,7 +211,6 @@ img {
   background-position: center;
   color: var(--dark_blue);
   cursor: pointer;
-  /* border: 1px solid red; */
 }
 
 .half {
@@ -226,7 +224,6 @@ img {
   justify-content: space-between;
   flex-direction: column;
   margin: 65px 0 26px 23px;
-  /* border: 1px solid red; */
 }
 
 .deal {
