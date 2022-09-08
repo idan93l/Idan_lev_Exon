@@ -73,19 +73,32 @@ body {
   background-color: var(--value_vector);
 }
 
+.icon {
+  width: 16px;
+  height: 18px;
+  margin: 0 10px;
+  line-height: 140%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
 .value {
   color: var(--dark_blue);
   background: var(--value);
 }
 
 .fire {
-  width: 16px;
-  height: 18px;
   background-image: url("../assets/fire.svg");
-  margin: 0 10px;
 }
 
 .choice {
+  color: var(--main_container);
+  background-color: var(--choice);
+}
+
+.trophy {
+  background-image: url("../assets/trophy.svg");
 }
 
 .number {
@@ -298,8 +311,10 @@ img {
 
 @media screen and (min-width: 721px) and (max-width: 1074px) {
   .main-container {
-    width: 672px;
+    min-width: 672px;
     height: 132px;
+    margin: 0 24px;
+    justify-content: space-around;
   }
 
   .top-label {
@@ -308,13 +323,9 @@ img {
     font-size: 12px;
   }
 
-  .fire {
+  .icon {
     width: 13px;
     height: 15px;
-    background-image: url("../assets/fire.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
     margin: 0 9.5px;
   }
 
@@ -333,10 +344,8 @@ img {
     width: 59px;
     height: 68px;
     line-height: 0;
-    color: var(--number_color);
     padding: 0;
     position: absolute;
-    font-weight: 700;
     font-size: 50px;
   }
 
@@ -344,7 +353,6 @@ img {
     width: 118px;
     height: 75px;
     padding: 11px 15px 32px;
-    cursor: pointer;
   }
 
   .middle-container {
@@ -402,19 +410,16 @@ img {
   }
 
   .rate-container {
-    display: flex;
     margin: 2px 0 15px;
   }
-  
+
   .rate {
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 4px;
   }
-  
+
   .rate-info {
-    position: absolute;
-    content: "";
     right: 1px;
     top: -6px;
     width: 11.25px;
@@ -424,15 +429,11 @@ img {
   .stars-container {
     margin-left: 8px;
   }
-  
+
   .star {
     width: 8px;
     height: 8px;
     margin-left: 2px;
-  }
-  
-  .half {
-    background-image: url("../assets/star-half.svg");
   }
 
   .right-container {
@@ -441,25 +442,145 @@ img {
     align-items: center;
     margin: 65px 0px 36px 19px;
   }
-  
+
   .deal {
     width: 171px;
     height: 36px;
     gap: 10px;
     font-size: 14px;
   }
-  
+
   .amazon {
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 720px) {
+  .main-container {
+    min-width: 340px;
+    height: 375px;
+    margin: 0 24px;
+    flex-direction: column;
+  }
+
+  .top-label {
+    width: 140px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .top-label:before {
+    top: 32px;
+    left: 0;
+    background-color: var(--choice_vector);
+  }
+
+  .icon {
+    width: 20px;
+    height: 25px;
+    margin: 0 7px;
+  }
+
+  .number {
+    top: 1px;
+    right: 42px;
+    width: 59px;
+    height: 68px;
+    line-height: 0;
+    padding: 0;
+    position: absolute;
+    font-size: 64px;
+  }
+
+  img {
+    width: 160px;
+    height: 101px;
+    padding: 42px 90px 32px;
+  }
+
+  .rate-container {
+    top: 85px;
+    right: 17px;
+    content: "";
+    margin: 2px 0 15px;
+    position: absolute;
+  }
+
+  .rate {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+
+  .rate-info {
+    right: 6px;
+    top: -8px;
+    width: 11.25px;
+    height: 11.25px;
+  }
+
+  .stars-container {
+    margin-left: 0px;
+  }
+
+  .star {
+    width: 8px;
+    height: 8px;
+    margin-left: 2px;
+  }
+
+  .middle-container {
+    height: 60px;
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 18px 24px 0 0;
+  }
+
+  .middle-container-inner {
+    padding: 0;
+  }
+
+  .discount {
+    width: 61px;
+    height: 21px;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .brand {
+    align-self: center;
+  }
+
+  .right-container {
+    width: 300px;
+    height: 100px;
+    margin: 5px 0 0;
+  }
+
+  .inner-right-container {
+    margin: 0;
+  }
+
+  .amazon {
+    margin-bottom: 4px;
+  }
+
+  .deal {
+    height: 42px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+
+  .tv-info {
+    font-size: 14px;
+  }
+
   .value {
     display: none;
   }
 
-  .show-container-middle {
+  .show-container-middle,
+  .show-container {
     display: none;
   }
 }
