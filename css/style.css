@@ -118,6 +118,7 @@ img {
   width: 202px;
   height: 128px;
   padding: 17px 13px 32px;
+  cursor: pointer;
   /* border: 1px solid red; */
 }
 
@@ -136,6 +137,7 @@ img {
   font-size: 16px;
   line-height: 140%;
   color: var(--text_darker);
+  cursor: pointer;
 }
 
 .middle-container-inner {
@@ -150,6 +152,7 @@ img {
   font-size: 14px;
   color: var(--text_dark);
   padding-bottom: 12px;
+  cursor: pointer;
 }
 
 .discount {
@@ -195,6 +198,7 @@ img {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+  cursor: pointer;
 }
 
 .stars-container {
@@ -206,16 +210,81 @@ img {
   width: 11px;
   height: 11px;
   margin-left: 2.3px;
-  background-image: url('../assets/star-full.svg');
+  background-image: url("../assets/star-full.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
   color: var(--dark_blue);
+  cursor: pointer;
   /* border: 1px solid red; */
 }
 
 .half {
-  background-image: url('../assets/star-half.svg');
+  background-image: url("../assets/star-half.svg");
+}
+
+.right-container {
+  width: 246px;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 65px 0 26px 23px;
+  /* border: 1px solid red; */
+}
+
+.deal {
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: var(--dark_blue);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--main_container);
+  cursor: pointer;
+}
+
+.inner-right-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.amazon {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text_dark);
+  cursor: pointer;
+}
+
+.show-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.show-more {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text_darker);
+}
+
+.arrow {
+  height: 8px;
+  width: 12px;
+  color: var(--text_darker);
+  background-image: url("../assets/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  margin: 0 2px 0 5px;
 }
 
 @media screen and (min-width: 1074px) {
@@ -228,6 +297,8 @@ img {
   .choice {
     display: none;
   }
+
+  
 }
 
 @media screen and (max-width: 720px) {
