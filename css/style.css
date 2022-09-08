@@ -289,7 +289,6 @@ img {
 }
 
 @media screen and (min-width: 1074px) {
-  .hdSmart,
   .googleTv,
   .choice,
   .show-container-middle {
@@ -365,7 +364,6 @@ img {
   .choice,
   .hdSmart,
   .googleTv,
-  .brand,
   .discount {
     display: none;
   }
