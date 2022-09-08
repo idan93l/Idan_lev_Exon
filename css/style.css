@@ -292,18 +292,9 @@ img {
 }
 
 @media screen and (min-width: 1074px) {
-  .hdSmart {
-    display: none;
-  }
-
-  .googleTv {
-    display: none;
-  }
-
-  .choice {
-    display: none;
-  }
-
+  .hdSmart,
+  .googleTv,
+  .choice,
   .show-container-middle {
     display: none;
   }
@@ -332,10 +323,6 @@ img {
   .top-label:before {
     top: 28px;
     left: 0;
-  }
-
-  .choice {
-    display: none;
   }
 
   .number {
@@ -372,24 +359,17 @@ img {
     cursor: pointer;
   }
 
-  .hdSmart {
-    display: none;
-  }
-
-  .googleTv {
-    display: none;
-  }
-
   .brand {
     font-weight: 400;
     font-size: 12px;
   }
 
+  .show-container,
+  .choice,
+  .hdSmart,
+  .googleTv,
+  .brand,
   .discount {
-    display: none;
-  }
-
-  .show-container {
     display: none;
   }
 
@@ -576,12 +556,9 @@ img {
     font-size: 14px;
   }
 
-  .value {
-    display: none;
-  }
-
   .show-container-middle,
-  .show-container {
+  .show-container,
+  .value {
     display: none;
   }
 }
